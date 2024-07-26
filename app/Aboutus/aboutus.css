@@ -1,0 +1,148 @@
+/* General styles */
+.aboutus-container {
+    padding: 20px;
+  }
+  
+  .a1, .b1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+    background-color: rgb(34, 34, 53);
+    justify-content: center;
+  }
+  
+  .b1{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 40px;
+    background-color: #FF5F1F;
+
+}
+  
+  .a2, .b2 {
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .titre, .titre1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(253, 253, 253);
+  }
+  
+  .img, .img1 {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+  
+  .txt, .txt1 {
+    font-size: 20px;
+    color: aliceblue;
+    margin: 20px 0;
+  }
+  
+  .values {
+    background-color: rgb(34, 34, 53);
+    color: #fff;
+    padding: 60px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 40px 0;
+    text-align: center;
+    height:500px
+  }
+  
+  .values-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .values-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: ;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #FF6700;
+  }
+  
+  .card-text {
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+  }
+  
+  .s{
+    
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+    height: 350px;
+   
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .a1, .b1 {
+      flex-direction: column;
+    }
+  
+    .titre, .titre1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+  
+    .txt, .txt1 {
+      font-size: 1rem;
+    }
+  
+    .values-title {
+      font-size: 2rem;
+    }
+  
+    .card-title {
+      font-size: 1.2rem;
+    }
+  
+    .card-text {
+      font-size: 1rem;
+    }
+  
+    .img, .img1 {
+      height: auto;
+    }
+    .values{
+        height: 1000px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1350px) {
+    .values{
+        height: 1110px;
+    }
+
+  }

@@ -1,0 +1,228 @@
+/* NavBar Styles */
+nav {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure the navbar is positioned above other content */
+  z-index: 10; /* Higher z-index to stay on top of other elements */
+}
+
+.boutton1 {
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin-left: 5px;
+  color: #383553;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-color: #383553;
+  border-style: solid;
+}
+
+.boutton1:active {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.boutton1:hover {
+  background-color: #FF5F1F;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  color: white;
+  border-color: #FF5F1F;
+}
+
+.navbar-link {
+  font-weight: 400;
+  color: #271919;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+  text-decoration: none;
+  position: relative; /* Needed for pseudo-element */
+  overflow: hidden; /* Needed for sliding background */
+  transition: color 0.3s; /* Smooth transition for text color */
+}
+
+.navbar-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0b0631; /* Background color on hover */
+  z-index: -1; /* Place it behind the text */
+  transform: translateX(-100%); /* Start off-screen to the left */
+  transition: transform 0.3s ease-out; /* Smooth slide effect */
+}
+
+.navbar-link:hover::before,
+.navbar-link.active::before {
+  transform: translateX(0); /* Slide in from the left */
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  color: white; /* Change text color on hover and active */
+}
+
+.navbar-toggler {
+  background-color: #ffffff;
+  color: #ffffff;
+  border: none;
+}
+
+.navbar-toggler.custom-toggler .navbar-toggler-icon {
+  width: 30px;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.navbar-toggler.custom-toggler .navbar-toggler-icon::before,
+.navbar-toggler.custom-toggler .navbar-toggler-icon::after {
+  content: '';
+  width: 30px;
+  height: 10px;
+  background-color: white;
+  opacity: 1;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s;
+}
+
+/* Style for the dropdown menu */
+.navbar .dropdown-menu {
+  display: none; /* Hide dropdown menu by default */
+  position: absolute; /* Position it below the toggle button */
+  background-color: white; /* Background color */
+  border: 1px solid rgba(0, 0, 0, 0.15); /* Border color */
+  border-radius: 0.25rem; /* Rounded corners */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175); /* Box shadow */
+  margin-top: 0.5rem; /* Space between the toggle button and menu */
+  z-index: 1000; /* Ensure dropdown is on top */
+  padding: 0.5rem 0; /* Padding for dropdown menu */
+  width: 100%; /* Default width */
+}
+
+/* Show the dropdown menu when the show class is added */
+.navbar .dropdown-menu.show {
+  display: block; /* Display dropdown menu */
+  width: 250px; /* Set the width when shown */
+}
+
+/* Style for the dropdown items */
+.navbar .dropdown-item {
+  color: #333; /* Text color for dropdown items */
+  padding: 0.5rem 1rem; /* Padding for dropdown items */
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Display items as blocks */
+  clear: both; /* Clear floats */
+  font-weight: 400; /* Font weight */
+  white-space: nowrap; /* Prevent text wrapping */
+  background-color: transparent; /* Background color */
+  border: 0; /* No border */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition for background color and text color */
+}
+
+/* Hover and focus style for dropdown items */
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  color: white; /* Text color on hover */
+  background-color: #ff5f1f99; /* Background color on hover */
+  border-radius: 0.25rem; /* Rounded corners on hover */
+}
+
+/* Style for the dropdown toggle arrow */
+.navbar .dropdown-toggle::after {
+  content: '';
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+  display: inline-block;
+  margin-left: 0.3em;
+  vertical-align: 0.255em;
+  border-top-color: #ff5f1f99; /* Arrow color */
+}
+
+/* Hover and focus style for the dropdown arrow */
+.navbar .dropdown-toggle:hover::after,
+.navbar .dropdown-toggle:focus::after {
+  border-top-color: #ff5f1f99; /* Change arrow color on hover */
+}
+
+/* Custom styles for dropdown menu positioning and shadow */
+.dp {
+  display: none; /* Hidden by default */
+  position: absolute; /* Absolute positioning */
+  background-color: white; /* White background */
+  min-width: 160px; /* Minimum width */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow effect */
+  padding: 12px 16px; /* Padding for dropdown content */
+  z-index: 1001; /* Higher z-index to stay above other elements */
+}
+
+/* Show the dropdown menu when hovering */
+.dropdown:hover .dp {
+  display: block; /* Show dropdown menu */
+}
+
+/* Ensure navbar and dropdown items appear above other content */
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  color: white; /* Text color on hover */
+  background-color: #ff5f1f99; /* Background color on hover */
+  border-radius: 0.25rem; /* Rounded corners on hover */
+}
+
+/* For navbarSupportedContent when toggler is clicked */
+#navbarSupportedContent {
+  background-color: white; /* White background for navbarSupportedContent */
+  border-radius: 10px;
+}
+
+/* Adjust width for #navbarSupportedContent when dropdown is shown */
+#navbarSupportedContent.show {
+  height: 250px; /* Set the width when the dropdown is shown */
+}
+
+.navbar-link.dropdown-toggle {
+  font-weight: 400;
+  color: #271919;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+  text-decoration: none;
+  position: relative; /* Needed for pseudo-element */
+  overflow: hidden; /* Needed for sliding background */
+  transition: color 0.3s; /* Smooth transition for text color */
+}
+
+.navbar-link.dropdown-toggle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0b0631; /* Background color on hover */
+  z-index: -1; /* Place it behind the text */
+  transform: translateX(-100%); /* Start off-screen to the left */
+  transition: transform 0.3s ease-out; /* Smooth slide effect */
+}
+
+.navbar-link.dropdown-toggle:hover::before,
+.navbar-link.dropdown-toggle.active::before {
+  transform: translateX(0); /* Slide in from the left */
+}
+
+.navbar-link.dropdown-toggle:hover,
+.navbar-link.dropdown-toggle.active {
+  color: white; /* Change text color on hover and active */
+}

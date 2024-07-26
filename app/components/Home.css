@@ -1,0 +1,247 @@
+section {
+    padding: 0 14%; 
+    height: 100vh;
+    background-color: rgb(24, 15, 15);
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 100px;
+    background-image: url('/photo1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Animation properties */
+    animation: zoomIn 2s ease-in-out; /* Adjust duration and timing function as needed */
+}
+
+@keyframes zoomIn {
+    0% {
+        background-size: 120%; /* Start with a larger image */
+    }
+    100% {
+        background-size: 100%; /* End with the full size */
+    }
+}
+
+.hero-text {
+    background-color: aliceblue;
+    height: 300px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-right: 70px;
+    width: 510px;
+    margin-left: 100px;
+    color: rgb(53, 52, 66);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-text:hover {
+    transform: scale(1.2); /* Scale the numbers on hover */
+}
+
+.text {
+    margin-top: 50px;
+    font-family: Times New Roman;
+}
+
+.text0 {
+    margin-top: 50px;
+    font-family: Times New Roman;
+    color: #FF5F1F;
+}
+
+.container1 {
+    display: flex;
+    background-color: #FF5F1F;
+    height: 200px;
+    align-items: center;
+    margin-bottom: 100px;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+
+.c1 {
+    display: flex;
+    margin: 20px; /* Adjust margin for better spacing */
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+    align-items: center; /* Center align */
+    text-align: center; /* Center text */
+}
+
+.c1:hover {
+    transform: scale(1.2); /* Scale the numbers on hover */
+}
+
+.text1 {
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    font-family: Times New Roman;
+    font-weight: bold;
+}
+
+.numbers {
+    color: rgb(0, 0, 0);
+    font-family: Times New Roman;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+.c2 {
+    background-color: rgb(3, 31, 54);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px; /* Add padding */
+}
+
+.texte2 {
+    font-family: Times New Roman;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px; /* Add margin-bottom for spacing */
+    text-align: center; /* Center align text */
+}
+
+.srv2 {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center align */
+}
+
+.card2 {
+    background-color: rgb(243, 245, 247);
+    flex-direction: row;
+    height: 320px;
+    width: 320px;
+    margin: 20px; /* Adjust margin for better spacing */
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgb(85, 83, 83);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card2:hover {
+    transform: scale(1.1); /* Adjust scaling */
+}
+
+.icon2 {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+
+.cardtitle {
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FF5F1F;
+}
+
+.cardtext {
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.big {
+    display: flex;
+    align-items: center; /* Center align items */
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+        background-size: cover;
+    }
+
+    .hero-text {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .text0{
+        margin-top: 15px;
+    }
+
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .c1 {
+        margin: 20px 0;
+        width: 80%;
+    }
+
+    .c2 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .srv2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card2 {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .texte2 {
+        margin-right: 0;
+        text-align: center;
+    }
+    .c3{
+        flex-direction: column;
+    }
+}
+hr.solid {
+    border-top: 3px solid #bbb;
+  }
+ .c3{
+    display: flex;
+    margin: 40px;
+    align-items: center;
+    box-shadow: inset;
+    border:5px solid rgb(6, 49, 83);
+ }
+ .photo2{
+     width: 450px;
+     height: 400px;
+     margin: 25px;
+ }
+.d3{
+    margin-right:150px;
+    margin-left: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.e3:hover {
+    transform: scale(1.1); 
+}
+
+.titre3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(6, 49, 83);
+}
+.f3{
+    color: #FF5F1F;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

@@ -1,0 +1,288 @@
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  border: violet;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+
+  border:black;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 0;
+  border-radius: 8px;
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+ 
+}
+
+.i-part {
+  flex: 1;
+  position: relative;
+  
+
+}
+
+.imgg {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 0 0 8px;
+  object-fit: cover; /* Ensure the image covers the area */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 2rem; /* Base font size */
+  text-align: center;
+  background: white; /* Optional: Add background for better readability */
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  animation: fadeIn 2s ease-in-out; /* Animation for quote */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.submit-button {
+  margin-top: 20px; /* Add margin to separate the button from the message input */
+  background: #ff5f1f;
+  color: white;
+  border: 3px solid rgb(255, 255, 255);
+  padding: 15px 30px; /* Larger button size */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.3rem; /* Larger font size */
+  transition: all 0.3s ease; /* Smooth transition */
+  width: 150px;
+  height: 70px;
+  font-weight: 500;
+}
+
+.submit-button:hover {
+  background: linear-gradient(250deg, rgb(255, 255, 255), white);
+  color: #40545a;
+  border: 3px solid #40545a;
+  transform: scale(1.1);
+}
+
+.inputs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ff5f1f;
+
+}
+
+.name1 {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.form-group1 {
+  margin: 20px 0;
+  position: relative;
+  width: 100%;
+  border: 2px solid ;
+
+}
+
+.form-group1 input,
+.form-group1 textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group1 input:focus,
+.form-group1 textarea:focus {
+  border-color: #001d3c;
+}
+
+.lbl1 {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  padding: 0 5px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.form-group1 input:focus + .lbl1,
+.form-group1 input:not(:placeholder-shown) + .lbl1,
+.form-group1 textarea:focus + .lbl1,
+.form-group1 textarea:not(:placeholder-shown) + .lbl1 {
+  top: -10px;
+  left: 10px;
+  font-size: 0.8rem;
+  color: #771a1a;
+  background-color: none;
+}
+
+.form-group1 input:placeholder-shown + .lbl1,
+.form-group1 textarea:placeholder-shown + .lbl1 {
+  color: #ff5f1f;
+}
+
+.form-group1 input::placeholder,
+.form-group1 textarea::placeholder {
+  color: transparent;
+}
+
+.form-group1 input:not(:placeholder-shown)::placeholder,
+.form-group1 textarea:not(:placeholder-shown)::placeholder {
+  color: #ffffff;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust as needed */
+  margin: 20px 0;
+}
+
+.box {
+  width: 170px;
+  height: 55px;
+  background-color: rgb(41, 40, 49);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border: 3px solid rgb(41, 40, 49);
+}
+
+.box:hover {
+  transform: scale(1.1); /* Enlarges the box on hover */
+}
+
+.box.active {
+  background-color: #ff5f1f;
+  color: white;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.checkbox-group .custom-checkbox {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.checkbox-group .custom-checkbox input {
+  display: none;
+}
+
+.checkbox-group .custom-checkbox input:checked + label {
+  background-color: orange;
+  color: white;
+}
+
+.checkbox-group .custom-checkbox label {
+  cursor: pointer;
+  margin-bottom: 0;
+  height: 40px;
+  border-radius: 10px;
+  padding: 0 10px; /* Added padding for better alignment */
+}
+
+
+@media (max-width: 1024px) {
+  .quote {
+    font-size: 1.5rem; /* Adjust font size for larger tablets */
+    padding: 15px;
+  }
+
+  .submit-button {
+    font-size: 1.2rem; /* Slightly smaller font size for larger tablets */
+    padding: 12px 25px; /* Adjust button padding */
+    max-width: 130px; /* Adjust max width */
+  }
+
+  .name1 {
+    gap: 10px; /* Reduced gap */
+  }
+}
+
+@media (max-width: 768px) {
+  .cont {
+    flex-direction: column;
+  }
+
+  .name1 {
+    flex-direction: column;
+    gap: 10px; /* Reduced gap */
+  }
+
+  .imgg {
+    border-radius: 8px 8px 0 0;
+    height: auto; /* Make sure the height adjusts */
+    max-height: 400px; /* Restrict height for small screens */
+  }
+
+  .quote {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+    padding: 10px;
+  }
+
+  .submit-button {
+    font-size: 1rem; /* Smaller font size for smaller screens */
+    padding: 10px 20px; /* Adjust button padding */
+    max-width: 120px; /* Adjust max width */
+  }
+}
+
+@media (max-width: 480px) {
+  .quote {
+    font-size: 1rem; /* Smaller font size for very small screens */
+    padding: 8px;
+  }
+
+  .submit-button {
+    font-size: 0.9rem; /* Smaller font size for very small screens */
+    padding: 8px 15px; /* Adjust button padding */
+    max-width: 100px; /* Adjust max width */
+  }
+}

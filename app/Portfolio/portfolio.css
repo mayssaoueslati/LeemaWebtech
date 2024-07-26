@@ -1,0 +1,167 @@
+/* portfolio.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .titlep {
+    text-align: center;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #FF5F1F;
+    border-radius: 2px;
+  }
+  
+  .p1 {
+    background-color: #343a40;
+    width: 90%; /* Make it responsive */
+    max-width: 1200px; /* Max width for larger screens */
+    margin: 0 auto; /* Center it */
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .textp {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 20px;
+  }
+  
+  .textp1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 20px;
+    margin-top: 20px;
+  }
+  
+  .card-columns {
+    column-count: 3;
+    column-gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .card {
+    display: inline-block;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.2s, color 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    background-color: #FF5F1F; /* Change background color to orange */
+  }
+  
+  .card:hover .card-title {
+    color: #343a40; /* Change title color to black */
+  }
+  
+  .card:hover .card-text {
+    color: #ffffff; /* Change text color to white */
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #FF5F1F;
+  }
+  
+  .card-subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 0.75rem;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .footer a {
+    color: #ff9800;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #ffffff;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .titlep {
+      font-size: 2rem;
+    }
+  
+    .textp {
+      font-size: 24px;
+    }
+  
+    .textp1 {
+      font-size: 18px;
+    }
+  
+    .card-columns {
+      column-count: 2; /* Reduce to 2 columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .titlep {
+      font-size: 1.5rem;
+    }
+  
+    .textp {
+      font-size: 20px;
+    }
+  
+    .textp1 {
+      font-size: 16px;
+    }
+  
+    .card-columns {
+      column-count: 1; /* Single column on very small screens */
+    }
+  }
+  

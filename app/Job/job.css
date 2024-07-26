@@ -1,0 +1,246 @@
+/* General Container */
+.con {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  color: #ffffff;
+  background-image: url('/bb.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Application Form Container */
+.a3 {
+  background-color: white;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title Styling */
+.titre2 {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ff6700, #3b3065);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Form Styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+/* Label Styling */
+.lbl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgb(231, 127, 22);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  padding: 0 0.25rem;
+  transform: translateY(-50%);
+  background: white;
+}
+
+/* Input and Textarea */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  transition: all 0.3s ease;
+  resize: none;
+}
+
+/* Focused Input and Textarea */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom-color: rgb(231, 127, 22);
+}
+
+/* Placeholder Color */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: transparent;
+}
+
+/* Label Transition */
+.form-group input:focus + .lbl,
+.form-group input:not(:placeholder-shown) + .lbl,
+.form-group textarea:focus + .lbl,
+.form-group textarea:not(:placeholder-shown) + .lbl {
+  top: -10px;
+  font-size: 0.75rem;
+  color: rgb(231, 127, 22);
+}
+
+/* Radio Button Styling */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: grid;
+  place-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+input[type="radio"]:checked {
+  background-color: #ff6700;
+  border-color: #ff6700;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Form Control */
+.form-control {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #333;
+  width: 500px;
+}
+
+/* Position Text */
+.tp {
+  align-self: flex-start;
+  color: rgb(231, 127, 22);
+  font-weight: 600;
+  font-size: medium;
+}
+
+/* File Upload Styling */
+.file-upload {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.file-upload-label {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff6700, #3b3065);
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid rgb(212, 122, 20);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.file-upload-label:hover {
+  background-color: #ff6700;
+  color: #fbfbfb;
+}
+
+.file-upload input[type="file"] {
+  display: none;
+}
+
+.file-upload-filename {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: white;
+  border-color: #ff6700;
+  color: #ff6700;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  margin-top: 0px;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff6700;
+  border-color: #ff6700;
+  color: #fff;
+}
+
+/* Form Footer */
+.form-footer {
+  margin-top: 2rem;
+}
+
+.form-footer p {
+  font-size: 0.9rem;
+  color: rgb(31, 31, 70);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .form {
+    width: 90%;
+  }
+
+  .file-upload-label {
+    font-size: 0.9rem;
+  }
+
+  button[type="submit"] {
+    padding: 8px 16px;
+  }
+}
+
+/* Input Validation Styling */
+input:invalid {
+  border-bottom-color: #e74c3c;
+}
+
+input:valid {
+  border-bottom-color: #2ecc71;
+}

@@ -1,0 +1,91 @@
+.footer {
+    background-color: white;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    box-shadow:#000000;
+  }
+  
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-address {
+    margin-bottom: 10px;
+  }
+  
+  .address, .phone, .email {
+    font-size: 16px;
+    margin: 5px 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  
+  .footer-bottom {
+    font-size: 14px;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Small devices (phones, less than 768px) */
+  @media (max-width: 768px) {
+    .footer-info {
+      padding: 10px;
+    }
+  
+    .footer-address {
+      font-size: 14px;
+    }
+  
+    .socials {
+      gap: 8px;
+    }
+  
+    .social-icon {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 992px) {
+    .footer-info {
+      padding: 15px;
+    }
+  
+    .footer-address {
+      font-size: 15px;
+    }
+  
+    .socials {
+      gap: 10px;
+    }
+  
+    .social-icon {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  
