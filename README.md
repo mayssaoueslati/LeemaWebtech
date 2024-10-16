@@ -27,3 +27,35 @@ To run this project locally, follow these steps:
 
 https://github.com/user-attachments/assets/790e0f24-f546-4ae4-aea6-9a203ae967b4
 
+Installation
+To run the project locally, follow these steps:
+
+Clone the repository:
+
+bash
+Copier le code
+git clone https://github.com/yourusername/leema-webtech.git
+Navigate to the project directory:
+
+bash
+Copier le code
+cd leema-webtech
+Install the dependencies:
+
+bash
+Copier le code
+npm install
+Set up the environment variables:
+
+Create a .env file in the root directory and add the necessary environment variables.
+Start the development server:
+
+bash
+Copier le code
+npm run dev
+Open your browser and go to http://localhost:3000.
+
+Usage
+Navigate through the website using the navigation bar.
+Fill out the application forms to submit your project, job, or internship applications.
+Admin users can access the dashboard to manage submissions and inquiries.
