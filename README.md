@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Leema WebTech Official Website
+Welcome to the official repository of Leema WebTech! Leema WebTech is a software development company specializing in building websites and mobile applications for a diverse range of clients, from small local businesses to large international brands.
 
-## Getting Started
+Project Overview
+This repository contains the source code for Leema WebTech’s official website. The website serves as a platform to showcase our services, provide support for clients, and allow potential collaborators to apply for jobs or internships and submit project inquiries.
 
-First, run the development server:
+Key Features:
+Service Presentation: A detailed overview of the services we offer, such as website development, mobile app creation, and digital solutions.
+Job and Internship Applications: Dedicated pages where users can apply for open positions or internships.
+Project Submission Platform: A user-friendly form to allow businesses and individuals to start a project with us.
+Responsive Design: The site is optimized for various screen sizes and devices.
+Tech Stack
+The website is built using modern web development technologies:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Frontend:
+Next.js: A React-based framework for server-side rendering and static site generation.
+CSS: Custom styles are used for layout and design, offering a clean and professional appearance.
+Bootstrap: Utilized for some responsive components.
+Backend:
+Node.js: JavaScript runtime used to power the server.
+Express.js: Web application framework for building backend services.
+MongoDB: NoSQL database used for storing user data (job applications, project submissions, etc.).
+Pages
+Home: Overview of Leema WebTech’s mission, services, and client testimonials.
+About Us: Information about the company, our history, and values.
+Services: Detailed descriptions of the various services we provide.
+Join Us: A page where applicants can apply for job positions or internships.
+Start a Project: A form where potential clients can submit project inquiries.
+Contact Us: Get in touch with us through email or social media.
+Installation and Setup
+To run this project locally, follow these steps:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
