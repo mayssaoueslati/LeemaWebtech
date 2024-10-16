@@ -33,17 +33,14 @@ To run the project locally, follow these steps:
 Clone the repository:
 
 bash
-Copier le code
-git clone https://github.com/yourusername/leema-webtech.git
+git clone https://github.com/mayssaoueslati/leema-webtech.git
 Navigate to the project directory:
 
 bash
-Copier le code
 cd leema-webtech
 Install the dependencies:
 
 bash
-Copier le code
 npm install
 Set up the environment variables:
 
@@ -51,7 +48,6 @@ Create a .env file in the root directory and add the necessary environment varia
 Start the development server:
 
 bash
-Copier le code
 npm run dev
 Open your browser and go to http://localhost:3000.
 
