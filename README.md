@@ -13,13 +13,8 @@ Tech Stack
 The website is built using modern web development technologies:
 
 Frontend:
-Next.js: A React-based framework for server-side rendering and static site generation.
-CSS: Custom styles are used for layout and design, offering a clean and professional appearance.
-Bootstrap: Utilized for some responsive components.
-Backend:
-Node.js: JavaScript runtime used to power the server.
-Express.js: Web application framework for building backend services.
-MongoDB: NoSQL database used for storing user data (job applications, project submissions, etc.).
+Next.js CSS Bootstrap
+Backend:Node.js Express.js MongoDB
 Pages
 Home: Overview of Leema WebTech’s mission, services, and client testimonials.
 About Us: Information about the company, our history, and values.
@@ -30,4 +25,5 @@ Contact Us: Get in touch with us through email or social media.
 Installation and Setup
 To run this project locally, follow these steps:
 
+https://github.com/user-attachments/assets/790e0f24-f546-4ae4-aea6-9a203ae967b4
 
